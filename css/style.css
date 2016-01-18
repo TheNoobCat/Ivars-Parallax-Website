@@ -466,16 +466,16 @@ img {
 .bird-box {
   position: relative;
   height: 600px;
-  background-image: url(/images/bird-bg.jpg);
-  background-size: auto 600px;
-  background-position: top center;
+  background-image: url(/images/bird-bg2.jpg);
+  background-size: cover;
+  background-position: 0px -50px;
   background-attachment: fixed;
   overflow: hidden;
   z-index: 1;
 }
 
 .logo {
-  height: 100px;
+  height: 120px;
   width: 100%;
   background-image: url(/images/black-bird-logo.svg);
   background-position: center;
@@ -488,13 +488,13 @@ img {
 .fore-bird {
   width: 960px;
   height: 733px;
-  background-image: url(/images/fore-bird.png);
+  background-image: url(/images/fore-bird2.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   position: absolute;
   left: 50%;
-  margin-left: -480px;
-  top: 390px;
+  margin-left: -300px;
+  top: -50px;
 }
 
 .back-bird {
