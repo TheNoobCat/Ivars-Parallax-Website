@@ -7,7 +7,7 @@ $(window).scroll(function(){
   if (wScroll <= pContainerHeight) {
 
     $('.logo').css({
-      'transform' : 'translate(0px, '+ wScroll /2 +'%)'
+      'transform' : 'translate(0px, '+ wScroll /2.5 +'%)'
     });
 
     $('.back-bird').css({
@@ -15,7 +15,7 @@ $(window).scroll(function(){
     });
 
     $('.fore-bird').css({
-      'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
+      'transform' : 'translate(0px, -'+ wScroll /5 +'%)'
     });
 
   }
