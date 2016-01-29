@@ -3,8 +3,43 @@
 body
   font-family: "Open Sans", sans-serif
 
+ul
+  position: fixed
+  float: right
+  width: 100%
+  list-style-type: none
+  margin: 0
+  padding: 0
+  overflow: hidden
+  background-color: #333
+  z-index: 3
+
+li
+  border-right: 1px solid #bbb
+  float: left
+  z-index: 3
+
+li:last-child
+  border-right: none
+
+li a
+  display: block
+  color: white
+  text-align: center
+  padding: 14px 6px
+  text-decoration: none
+  z-index: 3
+
+li a:hover
+  background-color: #555
+  color: white
+
+li a:active
+  background-color: #rgb(42, 113, 187)
+  color: white
+
 .head
-  color: #888661
+  color: rgb(255, 138, 0)
   weight: 300
 
 .welcome
