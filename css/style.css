@@ -400,47 +400,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-ul {
-  position: fixed;
-  float: right;
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  z-index: 3;
-}
-
-li {
-  border-right: 1px solid #bbb;
-  float: left;
-  z-index: 3;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 6px;
-  text-decoration: none;
-  z-index: 3;
-}
-
-li a:hover {
-  background-color: #555;
-  color: white;
-}
-
-li a:active {
-  background-color: #rgb 42, 113, 187;
-  color: white;
-}
-
 .head {
   color: #ff8a00;
   weight: 300;
@@ -475,19 +434,6 @@ img {
 .happy {
   color: blue;
   font-style: italic;
-}
-
-.happy li {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  margin-bottom: 16px;
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-}
-
-.happy li:hover {
-  color: white;
 }
 
 .toggle {
@@ -537,41 +483,3 @@ img {
   margin-left: -230px;
   top: -50px;
 }
-
-/*.nav-side
-  position: fixed
-  left: 0
-  top: 0
-  height: 100%
-  width: 100%
-  max-width: 250px
-  background-color: rgb(42, 219, 169)
-  box-sizing: border-box
-  padding: 20px
-  color: #ffffff
-  margin-left: -250px
-  transition: margin 200ms ease-in-out
-  z-index: 3 */
-/*.nav-side.nav-open
-  margin-left: 0
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0) */
-/*.nav-toggle
-  position: absolute
-  right: -40px
-  top: 0
-  width: 40px
-  height: 40px
-  background-color: rgb(42, 219, 169)
-  line-height: 40px
-  text-decoration: none
-  text-align: center
-  border-bottom-right-radius: 3px
-  box-shadow: 1px 0 3px rgba(0, 0, 0, 0)
-  z-index: 2 */
-/*.nav-toggle:before
-  content: "\2192"
-  font-weight: 600
-  color: #fff
-  z-index: 4 */
-/*.nav-side.nav-open .nav-toggle:before
-  content: "\2190" */

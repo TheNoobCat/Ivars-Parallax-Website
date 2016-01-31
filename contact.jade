@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Ivars Website
+    meta(name="description", content="")
+    meta(name="author", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="icon", type="image/png", href="images/favicon.png")
+    link(rel="stylesheet", href="css/animate.css")
+    script (src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+  body
+  nav.navbar.navbar-inverse.navbar-fixed-top
+    .container-fluid
+      .navbar-header
+        a.navbar-brand(href='index.html') Ivars Website
+      ul.nav.navbar-nav
+        li
+          a(href='index.html')
+            span.glyphicon.glyphicon-home
+            |  Home
+        li
+          a(href='about.html')
+            span.glyphicon.glyphicon-user
+            |  About
+        li
+          a(href='cv.html')
+            span.glyphicon.glyphicon-list-alt
+            |  CV
+        li.active
+          a(href='contact.html')
+            span.glyphicon.glyphicon-earphone
+            |  Contact
+        li
+          a(href='#')
+            span.glyphicon.glyphicon-log-in
+            |  Login     
+  p
+  p
+  .container
+    .row
+      .col-md-12
+        .well.well-sm
+          form.form-horizontal(method='post')
+            fieldset
+              legend.text-center.header Contact us
+              .form-group
+                span.col-md-1.col-md-offset-2.text-center
+                  i.fa.fa-user.bigicon
+                .col-md-8
+                  input#fname.form-control(name='name', type='text', placeholder='First Name')
+              .form-group
+                span.col-md-1.col-md-offset-2.text-center
+                  i.fa.fa-user.bigicon
+                .col-md-8
+                  input#lname.form-control(name='name', type='text', placeholder='Last Name')
+              .form-group
+                span.col-md-1.col-md-offset-2.text-center
+                  i.fa.fa-envelope-o.bigicon
+                .col-md-8
+                  input#email.form-control(name='email', type='text', placeholder='Email Address')
+              .form-group
+                span.col-md-1.col-md-offset-2.text-center
+                  i.fa.fa-phone-square.bigicon
+                .col-md-8
+                  input#phone.form-control(name='phone', type='text', placeholder='Phone')
+              .form-group
+                span.col-md-1.col-md-offset-2.text-center
+                  i.fa.fa-pencil-square-o.bigicon
+                .col-md-8
+                  textarea#message.form-control(name='message', placeholder='Enter your massage for us here.', rows='7')
+              .form-group
+                .col-md-12.text-center
+                  button.btn.btn-primary.btn-lg(type='submit') Submit
+  style.
+    .header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+    }
+    .bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+    }

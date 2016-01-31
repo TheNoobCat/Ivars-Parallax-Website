@@ -2,24 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Ivar</title>
+    <title>Ivars Website</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/animate.css">
+    <script>(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")</script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   </head>
   <body>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <ul style="float:right;list-style-type:none">
-        <li><a hfef="about.html" class="active">About</a></li>
-        <li><a href="login.html">Login</a></li>
-      </ul>
-    </ul>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header"><a href="index.html" class="navbar-brand">Ivars Website</a></div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          <li><a href="about.html"><span class="glyphicon glyphicon-user"></span> About</a></li>
+          <li><a href="cv.html"><span class="glyphicon glyphicon-list-alt"></span> CV</a></li>
+          <li><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login    </a></li>
+        </ul>
+      </div>
+    </nav>
     <header class="bird-box">
       <div class="back-bird"></div>
       <div class="logo"></div>
@@ -27,18 +32,22 @@
     </header>
     <section class="content">
       <article>
-        <div class="container fadeInUp wow">
+        <div class="fadeInUp animated">
           <h1 class="head">Ivar Myrberg</h1>
         </div>
         <hr>
-        <p class="welcome fadeInDown animated"> </p>
-        <p style="margin-top: 100px" class="test rubberBand wow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="welcome zoomIn animated">Tjäna</p>
+        <p style="margin-top: 100px" class="test rollIn animated">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
+      <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+          <p class="navbar-text pull-left">Site Built By Ivar Myrberg</p><a href="https://twitter.com/IMyrberg" class="navbar-btn btn-info btn pull-right">Follow me on Twitter</a>
+        </div>
+      </div>
       <div style="height: 2000px"></div>
     </section>
     <script src="/js/jquery-2.1.3.min.js"></script>
     <script src="/js/wow.min.js"></script>
     <script src="/js/functions.js"></script>
-    <lorem></lorem>
   </body>
 </html>
