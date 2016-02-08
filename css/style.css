@@ -420,6 +420,10 @@ figure {
   margin: auto;
 }
 
+#contactElement {
+  margin-top: 60px;
+}
+
 .content article {
   padding: 100px 0;
   max-width: 640px;
