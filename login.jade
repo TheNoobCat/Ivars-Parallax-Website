@@ -1,0 +1,70 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Ivars Website
+    meta(name="description", content="")
+    meta(name="author", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="icon", type="image/png", href="images/favicon.png")
+    link(rel="stylesheet", href="css/animate.css")
+    link(rel="stylesheet", href="css/layout1.css")
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+    script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/login.css')
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html') Ivars Website
+        #myNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='index.html')
+                span.glyphicon.glyphicon-home
+                |  Home
+            li
+              a(href='about.html')
+                span.glyphicon.glyphicon-user
+                |  About
+            li
+              a(href='cv.html')
+                span.glyphicon.glyphicon-list-alt
+                |  CV
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='contact.html')
+                span.glyphicon.glyphicon-earphone
+                |  Contact
+            li.active
+              a(href='login.html')
+                span.glyphicon.glyphicon-log-in
+                |  Login  
+    margin-top: 20 px  
+    .login
+      .heading
+        h2 Sign in
+        form(action='#')
+          .input-group.input-group-lg
+            span.input-group-addon
+              i.fa.fa-user
+            input#usermail.form-control(type='text', placeholder='Username or email')
+          .input-group.input-group-lg
+            span.input-group-addon
+              i.fa.fa-lock
+            input#pass.form-control(type='password', placeholder='Password')
+          button.float(type='submit') Login
+        div.navbar.navbar-default.navbar-fixed-bottom
+          div.container
+            p.navbar-text.pull-left Site Built By Ivar Myrberg
+            a.navbar-btn.btn-info.btn.pull-right(href="https://twitter.com/IMyrberg") Follow me on Twitter
+
+  script(src="/js/jquery-2.1.3.min.js")
+  script(src="/js/wow.min.js")
+  script(src="/js/functions.js")

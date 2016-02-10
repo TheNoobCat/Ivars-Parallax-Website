@@ -12,31 +12,38 @@ html(lang="en")
     script (src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
     link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
   body
-  nav.navbar.navbar-inverse.navbar-fixed-top
-    .container-fluid
-      .navbar-header
-        a.navbar-brand(href='index.html') Ivars Website
-      ul.nav.navbar-nav
-        li
-          a(href='index.html')
-            span.glyphicon.glyphicon-home
-            |  Home
-        li.active
-          a(href='about.html')
-            span.glyphicon.glyphicon-user
-            |  About
-        li
-          a(href='cv.html')
-            span.glyphicon.glyphicon-list-alt
-            |  CV  
-        li
-          a(href='contact.html')
-            span.glyphicon.glyphicon-user
-            |  Contact
-        li
-          a(href='#')
-            span.glyphicon.glyphicon-log-in
-            |  Login    
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html') Ivars Website
+        #myNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='index.html')
+                span.glyphicon.glyphicon-home
+                |  Home
+            li.active
+              a(href='about.html')
+                span.glyphicon.glyphicon-user
+                |  About
+            li
+              a(href='cv.html')
+                span.glyphicon.glyphicon-list-alt
+                |  CV
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='contact.html')
+                span.glyphicon.glyphicon-earphone
+                |  Contact
+            li
+              a(href='login.html')
+                span.glyphicon.glyphicon-log-in
+                |  Login    
+    h1.test work in progress
       div.navbar.navbar-default.navbar-fixed-bottom
         div.container
           p.navbar-text.pull-left Site Built By Ivar Myrberg

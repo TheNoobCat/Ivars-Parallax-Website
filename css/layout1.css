@@ -1,0 +1,102 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.head {
+  color: #ff8a00;
+  weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.welcome {
+  color: #2f3ec3;
+  font-size: 30px;
+  font-style: normal;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.test {
+  color: #8f8f8f;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+figure {
+  margin: auto;
+}
+
+#contactElement {
+  margin-top: 60px;
+}
+
+.content article {
+  padding: 100px 0;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar-text.pull-left, .navbar-btn.btn-info.btn.pull-right, .navbar.navbar-inverse.navbar-fixed-top {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.happy {
+  color: blue;
+  font-style: italic;
+}
+
+.test {
+  margin-top: 200px;
+}
+
+.toggle {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  position: fixed;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 200px;
+  z-index: 2;
+}
+
+.bird-box {
+  position: relative;
+  height: 600px;
+  background-image: url(/images/winter-bg.jpg);
+  background-size: cover;
+  background-position: 0px -50px;
+  background-attachment: fixed;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.logo {
+  height: 120px;
+  width: 100%;
+  background-image: url(/images/ivar.myrberg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.fore-bird {
+  width: 960px;
+  height: 733px;
+  background-image: url(/images/ballon.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -230px;
+  top: -50px;
+}
