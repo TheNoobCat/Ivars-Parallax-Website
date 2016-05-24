@@ -20,17 +20,23 @@ app.use(cors());
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://ivar:sony2010@ds062178.mongolab.com:62178/db1');
 
-/*var postSchema = mongoose.Schema({
-	 content: String,
-	 postCookie: String,
-	 postID: String,
-	 date: { type: Date, default: Date.now }
+var adminSchema = mongoose.Schema({
+	 usernm: String,
+   pass: String,
+   email: String,
+	 cookie: String
 });
 
-var posts = mongoose.model('post', postSchema);
-*/
+var posts = mongoose.model('admins', adminSchema);
+
 
 app.post('/request', function (req, res) {
+  var fname = req.body.fname;
+  console.log(fname);
+  res.json({message: 'this is a response'});
+});
+
+app.get('/admin', function (req, res) {
   var fname = req.body.fname;
   console.log(fname);
   res.json({message: 'this is a response'});
