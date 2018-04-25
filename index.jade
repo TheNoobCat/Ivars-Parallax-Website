@@ -5,70 +5,94 @@ html(lang="en")
     title Ivars Website
     meta(name="description", content="")
     meta(name="author", content="")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel="stylesheet", href="css/style.css")
     link(rel="icon", type="image/png", href="images/favicon.png")
     link(rel="stylesheet", href="css/animate.css")
     link(rel="stylesheet", href="css/layout1.css")
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/style.css")
     script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
     link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|IM+Fell+Double+Pica:400italic', rel='stylesheet', type='text/css')
+    script(src="js/modernizr.js")
+
   body
-    nav.navbar.navbar-inverse.navbar-fixed-top
-      .container-fluid
-        .navbar-header
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='index.html') Ivars Website
-        #myNavbar.collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li.active
-              a(href='index.html')
-                span.glyphicon.glyphicon-home
-                |  Home
-            li
-              a(href='about.html')
-                span.glyphicon.glyphicon-user
-                |  About
-            li
-              a(href='cv.html')
-                span.glyphicon.glyphicon-list-alt
-                |  CV
-          ul.nav.navbar-nav.navbar-right
-            li
-              a(href='contact.html')
-                span.glyphicon.glyphicon-earphone
-                |  Contact
-            li
-              a(href='login.html')
-                span.glyphicon.glyphicon-log-in
-                |  Login    
+    main
+      nav.navbar.navbar-inverse.navbar-fixed-top
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='index.html') Ivars Website
+          #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='index.html')
+                  span.glyphicon.glyphicon-home
+                  |  Home
+              li
+                a(href='about.html')
+                  span.glyphicon.glyphicon-user
+                  |  About
+              li
+                a(href='cv.html')
+                  span.glyphicon.glyphicon-list-alt
+                  |  CV
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='contact.html')
+                  span.glyphicon.glyphicon-earphone
+                  |  Contact
+              li
+                a(href='login.html')
+                  span.glyphicon.glyphicon-log-in
+                  |  Login
+  
 
     header.bird-box
       .back-bird
       .logo
       .fore-bird
-      
-    
+
+
     section.content
-      
+
       article
         div(class="fadeInUp animated")
           h1.head Ivar Myrberg
-        
+
         hr
+        main.cd-main-content
+          .center
+            a.cd-btn.cd-modal-trigger(href='#0') Start Effect
+            // .cd-main-content
+            .cd-modal
+              .modal-content
+                h1 My Modal Content
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis saepe amet sit fugit rerum, corporis minus vitae officia quaerat incidunt voluptate, blanditiis ea est quibusdam voluptas animi quasi totam magni, commodi praesentium. Possimus quam illo ipsam iste unde totam cupiditate deleniti, impedit assumenda hic eligendi natus tempora dolores quod mollitia ab non sunt eaque adipisci, suscipit quas aliquid officiis beatae. Necessitatibus voluptatibus, perferendis tenetur perspiciatis adipisci nesciunt eum ex fuga commodi iure numquam enim rem ullam labore nisi magni sint voluptatem quos! Eum iure exercitationem voluptates repellendus culpa doloremque laborum animi illum, sint fugit soluta possimus a fuga veritatis molestias corporis placeat illo pariatur dolor reiciendis earum, sapiente omnis. Placeat maiores omnis, porro officia, laborum eos. Fugiat mollitia inventore consequuntur odit eaque, rerum recusandae, eum sint molestiae consequatur culpa deserunt quae aliquid dolor tempora tenetur architecto repellendus enim quasi atque, odio voluptas. Tenetur repellendus explicabo ipsum inventore quia aut eos expedita necessitatibus asperiores blanditiis! Delectus nisi laudantium ipsum! Quasi blanditiis corrupti dicta maiores placeat laboriosam delectus ipsum facere voluptas, magnam voluptatibus, perferendis alias ullam saepe, perspiciatis recusandae voluptates, dolores praesentium?
+              // .modal-content
+              a.modal-close(href='#0') Close
+            // .cd-modal
+            .cd-transition-layer
+              .bg-layer
+            // .cd-transition-layer
         p.welcome(class="zoomIn animated") Welcome
         p.test(class="zoomIn animated", style="margin-top: 100px") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      
+
       div.navbar.navbar-default.navbar-fixed-bottom
         div.container
           p.navbar-text.pull-left Site Built By Ivar Myrberg
           a.navbar-btn.btn-info.btn.pull-right(href="https://twitter.com/IMyrberg") Follow me on Twitter
       div(style="height: 2000px")
-    
-    script(src="/js/jquery.smoothwheel.js")        
-    script(src="/js/jquery-2.1.3.min.js")
+
+    script(src="/js/jquery.smoothwheel.js")
+    script(src="js/jquery-2.1.4.js")
+    script(src="js/main.js")
     script(src="/js/wow.min.js")
     script(src="/js/functions.js")

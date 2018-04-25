@@ -5,34 +5,39 @@
     <title>Ivars Website</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/layout1.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|IM+Fell+Double+Pica:400italic" rel="stylesheet" type="text/css">
+    <script src="js/modernizr.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#myNavbar" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand">Ivars Website</a>
+    <main>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Ivars Website</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+              <li><a href="about.html"><span class="glyphicon glyphicon-user"></span> About</a></li>
+              <li><a href="cv.html"><span class="glyphicon glyphicon-list-alt"></span> CV</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+              <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
         </div>
-        <div id="myNavbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="about.html"><span class="glyphicon glyphicon-user"></span> About</a></li>
-            <li><a href="cv.html"><span class="glyphicon glyphicon-list-alt"></span> CV</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
-            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login    </a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </main>
     <header class="bird-box">
       <div class="back-bird"></div>
       <div class="logo"></div>
@@ -44,18 +49,37 @@
           <h1 class="head">Ivar Myrberg</h1>
         </div>
         <hr>
+        <main class="cd-main-content">
+          <div class="center"><a class="cd-btn cd-modal-trigger" href="#0">Start Effect</a>
+            <!-- .cd-main-content-->
+            <div class="cd-modal">
+              <div class="modal-content">
+                <h1>My Modal Content</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis saepe amet sit fugit rerum, corporis minus vitae officia quaerat incidunt voluptate, blanditiis ea est quibusdam voluptas animi quasi totam magni, commodi praesentium. Possimus quam illo ipsam iste unde totam cupiditate deleniti, impedit assumenda hic eligendi natus tempora dolores quod mollitia ab non sunt eaque adipisci, suscipit quas aliquid officiis beatae. Necessitatibus voluptatibus, perferendis tenetur perspiciatis adipisci nesciunt eum ex fuga commodi iure numquam enim rem ullam labore nisi magni sint voluptatem quos! Eum iure exercitationem voluptates repellendus culpa doloremque laborum animi illum, sint fugit soluta possimus a fuga veritatis molestias corporis placeat illo pariatur dolor reiciendis earum, sapiente omnis. Placeat maiores omnis, porro officia, laborum eos. Fugiat mollitia inventore consequuntur odit eaque, rerum recusandae, eum sint molestiae consequatur culpa deserunt quae aliquid dolor tempora tenetur architecto repellendus enim quasi atque, odio voluptas. Tenetur repellendus explicabo ipsum inventore quia aut eos expedita necessitatibus asperiores blanditiis! Delectus nisi laudantium ipsum! Quasi blanditiis corrupti dicta maiores placeat laboriosam delectus ipsum facere voluptas, magnam voluptatibus, perferendis alias ullam saepe, perspiciatis recusandae voluptates, dolores praesentium?</p>
+              </div>
+              <!-- .modal-content--><a class="modal-close" href="#0">Close</a>
+            </div>
+            <!-- .cd-modal-->
+            <div class="cd-transition-layer">
+              <div class="bg-layer"></div>
+            </div>
+            <!-- .cd-transition-layer-->
+          </div>
+        </main>
         <p class="welcome zoomIn animated">Welcome</p>
-        <p style="margin-top: 100px" class="test zoomIn animated">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="test zoomIn animated" style="margin-top: 100px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
       <div class="navbar navbar-default navbar-fixed-bottom">
         <div class="container">
-          <p class="navbar-text pull-left">Site Built By Ivar Myrberg</p><a href="https://twitter.com/IMyrberg" class="navbar-btn btn-info btn pull-right">Follow me on Twitter</a>
+          <p class="navbar-text pull-left">Site Built By Ivar Myrberg</p><a class="navbar-btn btn-info btn pull-right" href="https://twitter.com/IMyrberg">Follow me on Twitter</a>
         </div>
       </div>
       <div style="height: 2000px"></div>
     </section>
-    <script src="/js/jquery.smoothwheel.js">       </script>
-    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/jquery.smoothwheel.js"></script>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/main.js"></script>
     <script src="/js/wow.min.js"></script>
     <script src="/js/functions.js"></script>
   </body>
